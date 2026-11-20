@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#09131a"><title>PHASE II — For Sarauniya ta</title>
+<style>
+:root{--bg:#09131a;--panel:#10232a;--gold:#e8c98e;--cream:#fff5e5;--mint:#b9ddca;--rose:#d9a2b5}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Georgia,serif;background:var(--bg);color:var(--cream)}
+body{background:radial-gradient(ellipse at 50% 5%,#24463e 0%,#142a30 35%,#09131a 78%);overflow-x:hidden}
+#sky{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#ffe9bd;animation:twinkle 4s infinite alternate}
+@keyframes twinkle{to{opacity:.1;transform:scale(.5)}}
+main{position:relative;z-index:1;min-height:100svh;padding:18px 14px;display:flex;align-items:center;justify-content:center}
+.page{display:none;position:relative;width:min(100%,560px);min-height:min(790px,calc(100svh - 36px));padding:36px 25px 48px;border:1px solid #e8c98e55;border-radius:26px;background:linear-gradient(150deg,#183239f2,#0b1821f7 70%);box-shadow:0 25px 90px #0009,inset 0 1px #fff2;text-align:center;overflow:hidden}
+.page.active{display:flex;flex-direction:column;align-items:center;justify-content:center;animation:appear .7s ease both}
+@keyframes appear{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:none}}
+.k{font:10px Arial,sans-serif;letter-spacing:3px;color:var(--gold);text-transform:uppercase}
+h1{font-size:clamp(44px,11vw,70px);font-weight:normal;line-height:.98;margin:23px 0 15px}h2{font-size:clamp(30px,7vw,43px);font-weight:normal;line-height:1.12;margin:14px 0 18px}
+p{font-size:17px;line-height:1.8;color:#e5e9df;max-width:430px;margin:9px auto}.muted{font:11px/1.8 Arial,sans-serif;letter-spacing:1.3px;color:#b8c9bf}.gold{color:var(--gold)}
+.rule{height:1px;width:76px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:18px auto}
+button{margin-top:23px;padding:15px 25px;border:1px solid #f2d8a6;border-radius:999px;background:linear-gradient(110deg,#ad804b,#f0d49b,#a57c4e);color:#14251f;font:700 10px Arial,sans-serif;letter-spacing:1.8px;text-transform:uppercase;cursor:pointer}
+button.ghost{background:#ffffff09;color:var(--cream);border-color:#e8c98e66}
+.medallion{width:174px;height:174px;border:1px solid #e8c98e88;border-radius:50%;display:grid;place-items:center;margin:24px auto;position:relative;box-shadow:0 0 0 8px #e8c98e0d,0 0 55px #5da88b22}
+.medallion:before{content:"";position:absolute;inset:10px;border:1px dashed #e8c98e88;border-radius:50%;animation:spin 32s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.crescent{width:88px;height:88px;border-radius:50%;box-shadow:-15px 8px 0 0 var(--gold);transform:rotate(-25deg);margin-left:16px}
+.progress{width:100%;max-width:390px;text-align:left;margin:22px auto}
+.progresshead{display:flex;justify-content:space-between;font:10px Arial,sans-serif;letter-spacing:1.7px;color:#d9e1d9}
+.bar{height:5px;background:#ffffff1b;border-radius:8px;margin-top:11px;overflow:hidden}.bar i{display:block;width:66%;height:100%;background:linear-gradient(90deg,#3d9279,#e8c98e);border-radius:8px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:420px;margin:18px auto}
+.tile{padding:15px 12px;border:1px solid #d4e2d41f;border-radius:15px;background:#ffffff08;text-align:left}
+.tile small{font:9px Arial,sans-serif;letter-spacing:1.6px;color:var(--gold)}.tile b{display:block;font-size:16px;font-weight:normal;margin:8px 0 5px}.tile span{font:11px/1.55 Arial,sans-serif;color:#bdc9c3}
+.quote{font-size:22px;line-height:1.65;color:#f2dcb2;font-style:italic;max-width:400px}
+.letter{text-align:left;width:100%;max-width:435px}.letter p{font-size:16px;line-height:1.9;margin:12px 0}.sign{font-size:26px;color:#e8c98e;font-style:italic;margin-top:18px}
+.bottom{position:absolute;bottom:17px;left:0;right:0;font:9px Arial,sans-serif;letter-spacing:2px;color:#849990}
+.corner{position:absolute;width:38px;height:38px;border-color:#e8c98e66}.tl{top:12px;left:12px;border-top:1px solid;border-left:1px solid}.tr{top:12px;right:12px;border-top:1px solid;border-right:1px solid}.bl{bottom:12px;left:12px;border-bottom:1px solid;border-left:1px solid}.br{bottom:12px;right:12px;border-bottom:1px solid;border-right:1px solid}
+@media(max-height:720px){.page{min-height:calc(100svh - 24px);padding-top:24px}.medallion{width:130px;height:130px;margin:14px auto}.crescent{transform:scale(.8) rotate(-25deg)}p{font-size:15px;line-height:1.65}.grid{margin:10px auto}.tile{padding:10px}}
+</style></head><body><div id="sky"></div><main>
+<section class="page active" id="p1"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+<div class="k">A chapter worth thanking Allah for</div><div class="medallion"><div class="crescent"></div></div>
+<div class="muted">THE JOURNEY TOWARDS NIKKAH</div><h1>PHASE <span class="gold">II.</span></h1><div class="rule"></div>
+<p>Not just another step. A reminder that Allah can make a difficult road gentle, one door at a time.</p><p class="muted">ALHAMDULILLAH FOR HOW FAR WE'VE COME.</p>
+<button onclick="go(2)">Enter this chapter</button><div class="bottom">MADE WITH LOVE • FOR SARAUNIYA TA 💜</div></section>
 
+<section class="page" id="p2"><div class="k">Look how far the dua has travelled</div><h2>One intention.<br><span class="gold">Many little steps.</span></h2>
+<p>We are not at the finish line yet. But today, we have a new reason to say Alhamdulillah.</p>
+<div class="progress"><div class="progresshead"><span>OUR JOURNEY</span><span>PHASE 02</span></div><div class="bar"><i></i></div><div class="muted" style="margin-top:8px">A symbol of progress — not a countdown.</div></div>
+<div class="grid">
+<div class="tile"><small>01 / THE INTENTION</small><b>A sincere beginning</b><span>Choosing a path that seeks Allah's pleasure.</span></div>
+<div class="tile"><small>02 / THE OPENING</small><b>Doors are moving</b><span>Taking the next steps with gratitude and trust.</span></div>
+<div class="tile"><small>03 / PREPARATION</small><b>Building responsibly</b><span>Effort, patience, family and readiness.</span></div>
+<div class="tile"><small>04 / THE PRAYER</small><b>Leaving it to Allah</b><span>Asking for what is best, in the best way.</span></div></div>
+<button onclick="go(3)">Read this reminder</button><div class="bottom">02 — GRATITUDE BEFORE THE NEXT STEP</div></section>
+
+<section class="page" id="p3"><div class="k">A reminder for both our hearts</div><div style="font-size:52px;color:var(--gold);margin:15px">۞</div>
+<p class="quote">“And whoever relies upon Allah — then He is sufficient for him.”</p><p class="muted gold">QUR'AN 65:3</p><div class="rule"></div>
+<p>May we never become so excited about reaching the destination that we forget the One guiding our steps.</p>
+<p>May our patience remain beautiful, our intentions sincere, and our gratitude grow with every opening.</p>
+<button onclick="go(4)">A du'a for our next chapter</button><div class="bottom">03 — TAWAKKUL • SABR • SHUKR</div></section>
+
+<section class="page" id="p4"><div class="k">The prayer I keep making</div><div style="font-size:52px;color:var(--gold);margin:12px">☾</div>
+<h2>Ya Allah,<br><span class="gold">make it beautiful.</span></h2>
+<p>Make our path to Nikkah easy and blessed. Guide our decisions, provide what we need through halal means, soften the hearts of our families, and protect us from what is not good for us.</p>
+<p>When the road feels long, grant us patience. When doors open, grant us gratitude. And when You unite us, make our home a place of sakinah, mercy and love.</p>
+<p class="gold" style="font-size:16px">Āmīn, yā Rabbal-‘ālamīn. 🤲</p>
+<button onclick="go(5)">One last page, Sarauniya</button><div class="bottom">04 — A DU'A, NOT A DEMAND</div></section>
+
+<section class="page" id="p5"><div class="k">To the one I keep praying for</div><div class="letter"><h2>Sarauniya ta 💜</h2><div class="rule" style="margin-left:0"></div>
+<p>Alhamdulillah for Phase 2. I don't take any of these steps for granted. Every little opening reminds me to thank Allah and work even harder.</p>
+<p>I cannot promise that every part of the journey will be easy, but I can promise to keep approaching it with sincerity, responsibility and a heart that wants to do things the right way.</p>
+<p>I pray that the same Allah who has brought us this far guides every step ahead, makes our preparations sufficient, and allows us to meet at the door of Nikkah with grateful hearts.</p>
+<p>For now, let's keep making dua, keep doing our part, and keep saying Alhamdulillah.</p><div class="sign">With love and prayers,<br>Muhammad</div></div>
+<button class="ghost" onclick="go(1)">Revisit our little chapter ↺</button><div class="bottom">END OF THIS CHAPTER • NOT THE END OF THE JOURNEY</div></section>
+</main>
+<script>
+const sky=document.getElementById('sky');for(let i=0;i<90;i++){let e=document.createElement('i');e.className='star';e.style.left=Math.random()*100+'%';e.style.top=Math.random()*100+'%';e.style.animationDelay=Math.random()*5+'s';e.style.opacity=.2+Math.random()*.65;sky.appendChild(e)}
+function go(n){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById('p'+n).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
+</script></body></html>
